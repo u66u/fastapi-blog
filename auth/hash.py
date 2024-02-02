@@ -1,6 +1,4 @@
-#!/usr/bin/python3
 import bcrypt
-
 
 class Hash:
     def hash_password(password):

@@ -1,7 +1,6 @@
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
-
-from database.configuration import Base
+from database.config import Base
 
 
 class Blog(Base):

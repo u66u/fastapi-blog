@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog List</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            width: 80%;
+        }
+        .blog-post {
+            border: 1px solid #F8B4D0;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .blog-post h2 {
+            color: #F8B4D0;
+        }
+        .blog-post p {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #F8B4D0;">Blog List</h1>
+        {% for blog in blogs %}
+            <div class="blog-post">
+                <h2>{{ blog.title }}</h2>
+                <p>{{ blog.body }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
